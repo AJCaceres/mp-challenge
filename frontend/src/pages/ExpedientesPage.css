@@ -1,0 +1,32 @@
+.expedientes-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.table-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.expediente-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.select-filter {
+  height: 41px;
+}
+
+@media (max-width: 768px) {
+  .expedientes-filters {
+    grid-template-columns: 1fr;
+  }
+  
+  .table-actions {
+    flex-wrap: wrap;
+  }
+}
